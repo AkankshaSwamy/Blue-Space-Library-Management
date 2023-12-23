@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/styles1.css">
+    <style>
+        .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style the table header */
+.table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Style the table rows */
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #63bd92;
+}
+
+/* Style the table cells */
+.table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Adding a new Book :</legend>
+        <div class="container">
+    <form action="/add_book" method="POST">
+        <div class="search-product-form">
+        <label for="codedata">ISBN Number :</label>
+        <input type="text" name="codedata" list="options" id="serial-no" required>
+           <br><br>
+        
+        <label for="amountdata">Available Books :</label>
+        <input type="number" name="amountdata" required><br><br>
+
+        <label for="buycost">Book Number :</label>
+        <input type="number" name="buycost" pattern="^\d+(\.\d{1,2})?" required><br><br>
+            
+        <label for="sellcost">Book Published Year :</label>
+        <input type="number" name="sellcost" pattern="^\d+(\.\d{1,2})?" required><br><br>
+        
+        <label for="product_name">Book Name :</label>
+        <input type="text" name="product_name" required><br><br>
+
+        <label for="product_buy">Book Author:</label>
+        <input type="text" name="product_buy" required><br><br>
+        
+        </div><br><br>
+
+        <div class="submit" id="sub"><input type="submit" value="Add Book"></div>
+</form>
+
+<div class="table">
+<table border="1">
+    <tr>
+        <th>Book Author</th>
+        <th>Book Name</th>
+        <th>Book Number</th>
+        <th>Available Books</th>
+        <th>Book Published Year</th>
+        <th>ISBN Number</th>
+    </tr>
+    {% for row in result %}
+    <tr>
+        {% for item in row %}
+        <td>{{ item }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+</div>
+</div>
+<form action="/index" method="POST">
+    <div class="home"><input type="submit" value="Back"></div>
+</form>
+</fieldset>
+
+
+</body>
+</html>

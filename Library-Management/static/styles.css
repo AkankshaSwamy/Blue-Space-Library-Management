@@ -1,0 +1,79 @@
+body {
+  background-image: url('2023-09-27\ \(4\).png');
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+ 
+  align-items: center;
+  height: 100vh;
+}
+.buttons1 {
+  margin-right: 1090px; /* Adjust the margin as needed */
+}
+.buttons{
+  margin-left: 1090px; /* Adjust the margin as needed */
+}
+.circular-menu {
+  position: relative;
+  width: 200px; /* Adjust the menu size as needed */
+  height: 200px; /* Adjust the menu size as needed */
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+  margin-left: 20px;
+}
+.buttons a {
+  border: 2px solid black;
+  color: rgb(17, 16, 16);
+  font-weight: bold;
+  font-size: 2vh; /* Reduce font size for smaller buttons */
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
+  padding: 1.5vw 3vh; /* Adjust padding for smaller buttons */
+  border-radius: 50%; /* Make the buttons circular */
+  height: 75px; /* Adjust the button size */
+  width: 100px; /* Adjust the button size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 15px; /* Adjust the line height to vertically center text */
+  background-color: rgba(104, 51, 8, 0.397);
+  margin: 5vh auto; /* Center the buttons horizontally */
+  transition: background-color 0.3s;
+}
+
+.buttons a:nth-child(2) {
+  background-color: rgba(104, 51, 8, 0.397);
+}
+
+.buttons a:nth-child(3) {
+  background-color: rgba(104, 51, 8, 0.397);
+}
+
+.buttons1 a {
+  border: 2px solid black;
+  color: black;
+  font-weight: bold;
+  font-size: 2vh; /* Reduce font size for smaller buttons */
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
+  padding: 1.5vw 3vh; /* Adjust padding for smaller buttons */
+  border-radius: 50%; /* Make the buttons circular */
+  height: 75px; /* Adjust the button size */
+  width: 100px; /* Adjust the button size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;    
+  line-height: 15px; /* Adjust the line height to vertically center text */
+  background-color: rgba(104, 51, 8, 0.397);
+  margin: 5vh auto; /* Center the buttons horizontally */
+  transition: background-color 0.3s;
+}
+
+.buttons1 a:nth-child(2) {
+  background-color: rgba(104, 51, 8, 0.397);
+}  
+.buttons a:hover,
+.buttons1 a:hover {
+  background-color: rgba(45, 78, 75, 0.7); /* Change the background color on hover */
+}                              

@@ -1,0 +1,77 @@
+body{
+    background-image: url('2023-09-28.png');
+    background-size: cover;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5vh;
+}
+.input_form{
+    margin-right: 10vw;
+    font-size: 2.5vh;
+    text-align: left;
+}
+.input_form input{
+    height: 2.5vh;
+    width: 30vh;
+    background-color: white;
+}
+.submit3{
+    text-align: center;
+}
+.home{
+    text-align: center;
+}
+.submit3 input{
+    height: 3vh;
+    font-size: 2vh;
+    width: 15vh;background-color: white;
+}
+.home input{
+    height: 3vh;
+    font-size: 2vh;
+    width: 15vh;
+    margin: 5vh 0 3vh 0;
+    background-color: white;
+}
+.table{
+    font-size: 2.5vh;
+}
+td , th{
+    padding: 2px;
+}
+legend{
+    font-size: 2.5vh;
+    margin-left: 5vh;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style the table header */
+.table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Style the table rows */
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #63bd92;
+}
+
+/* Style the table cells */
+.table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}

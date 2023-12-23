@@ -1,0 +1,107 @@
+body{
+    background-image: url('2023-09-28.png');
+    background-size: cover;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.search-product-form label{
+    font-size: 3vh;
+}
+.search-product-form input{
+    width: 20vw;
+    height: 3vh;
+    font-size: 2.5vh;
+    background-color: white;
+}
+.search-product-form{
+    max-width: 50%;
+    margin-top: 5vh;
+}
+.submit{
+    margin: auto;
+    max-width: 65%;
+    margin-bottom: 5vh;
+}
+.submit input{
+    width: 7vw;
+    height: 4vh;
+    text-align: center;
+    padding: 5px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5vh;
+}
+fieldset{
+    margin: auto;
+    max-width: 90%;
+    margin-top: 5vh;
+}
+label{
+    margin-top: 30px;
+}
+table{
+    text-align: center;
+    font-size: 2vh;
+}
+td,th{
+    padding: 2px;
+}
+.home{
+    text-align: center;
+}
+.home input{
+    height:4vh;
+    width: 15vh;
+    margin-bottom: 5vh;
+    font-size: 2.5vh;
+    padding: 2px;
+    background-color: white;
+    margin-top: 5vh;
+}
+legend{
+    font-size: 3vh;
+    margin-left: 5vh;
+}
+#sub input{
+    font-size: 2.3vh;
+    width:20vh;
+    height:4vh;
+    padding: 2px;
+    background-color: white;
+}
+.data{
+    margin-right: 5vh;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style the table header */
+.table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Style the table rows */
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #63bd92;
+}
+
+/* Style the table cells */
+.table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
